@@ -1,0 +1,7 @@
+Code the banner and menu section of the site with dropdowns. Make sure it is responsive, with breakpoints at 1024px, 768px and 320px.
+
+All of the assets you need are included in the zip file, but if you need anything or have any questions please contact:
+
+James Johnson
+james.johnson@emeraldexpo.com
+

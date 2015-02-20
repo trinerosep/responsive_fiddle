@@ -1,0 +1,160 @@
+<!doctype html>
+
+<head>
+
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="HTML Test">
+<meta name="keywords" content="HTML Test">
+<meta name="author" content="HTML Test">
+
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="js/global.js"></script>
+<link rel="stylesheet" href="css/global.css" />
+
+</head>
+
+<body>
+
+<div id="page" class="fade">
+
+<div id="nav1">
+
+<div id="n_contain">
+
+<div id="logo">
+<img src="img/us_antique.jpg" id="antique">
+</div>
+
+<ul id="top">
+<a href="#"><li>LAS VEGAS</li></a>
+<a href="#"><li>LOS ANGELES</li></a>
+<a href="#"><li>MIAMI<img src="img/down_arrow.jpg"></li></a>
+<a href="#"><li>NEW YORK<img src="img/down_arrow.jpg"></li></a>
+<a href="#"><li>AYG USA</li></a>
+<a href="#"><li>BLOG <img src="img/feather.jpg" class="right" id="ft"></li></a>
+</ul>
+
+<ul id="mobi">
+	<li>CHOOSE A CITY<img src="img/down_arrow.jpg">
+</ul>
+
+</div>
+</div>
+
+<div id="banner_top">
+<div id="b_inner">
+
+<img src="img/logo.png" id="logo_2">
+
+<div id="lan_dd">
+<!-- mock language dd -->
+<img src="img/mock_dd.jpg">
+</div>
+
+</div>
+</div>
+
+<div id="burger_king">
+<a class="burger">
+    <div></div>
+</a>
+<div class="box">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Members</a></li>
+    <li><a href="#">Partners</a></li>
+    <li><a href="#">Media</a></li>
+</div>
+</div>
+
+<div id="nav2">
+
+<div id="nav_con2">
+
+<div id="nav_left">
+<ul id="top2">
+<a href="#"><li>HOME</li></a>
+
+<li>
+<ul class="menu">
+    <li class="dropdown">
+        <a href="#" class="">MEMBERS</a>
+        <ul class="submenu">
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Benefits</a></li>
+            <li><a href="#">Member Galleries</a></li>
+            <li><a href="#">Young Gun of the Year Awards</a></li>
+        </ul>
+    </li>
+</ul>
+</li>
+
+<a href="#"><li>PARTNERS</li></a>
+<ul class="menu">
+    <li class="dropdown">
+        <a href="#" class="">MEDIA</a>
+        <ul class="submenu">
+            <li><a href="#">In the News</a></li>
+            <li><a href="#">Press Releases</a></li>
+        </ul>
+    </li>
+</ul></ul>
+
+</div>
+
+<div id="nav_right">
+
+<ul id="utility">
+<li><a href="#"><img src="img/fb.jpg" class="social"></a></li>
+<li><a href="#"><img src="img/twitter.jpg" class="social"></a></li>
+<li><a href="#"><img src="img/insta.jpg" class="social"></a></li>
+</ul>
+
+<div id="searchbar">
+<input type="text" value="" placeholder="Search">
+</div>
+
+</div>
+</div>
+</div>
+
+<div id="slides">
+<div id="slider-wrapper">
+        <div id="slider">
+            <div class="sp"><img src="HTML_Test/Assets/Art/AYG_Slide1.jpg" id="slide_img"></div>
+            <div class="sp" style="background: red;"><center><span style="color:#fff;">Slide #2<span></center></div>
+            <div class="sp" style="background: blue;"><center><span style="color:#fff;">Slide #3</span></center></div>
+            <div class="sp" style="background: black;"><center><span style="color:#fff;">Slide #4</span></center></div>
+</div>
+</div>
+
+<div id="nav"></div>
+<div id="button-previous">prev</div>
+<div id="button-next">next</div>
+</div>
+
+</div>
+
+<script>
+$('.burger').on('click', function() {
+    return $(this).toggleClass('open');
+});
+// Hide all the elements in the DOM that have a class of "box"
+$('.box').hide();
+
+// Make sure all the elements with a class of "clickme" are visible and bound
+// with a click event to toggle the "box" state
+$('.burger').each(function() {
+    $(this).show(0).on('click', function(e) {
+        // This is only needed if your using an anchor to target the "box" elements
+        e.preventDefault();
+        
+        // Find the next "box" element in the DOM
+        $(this).next('.box').slideToggle('fast');
+    });
+});
+</script>
+
+</body>
+
+</html>
+
